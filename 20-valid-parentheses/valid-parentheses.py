@@ -4,7 +4,7 @@ class Solution:
         stack = []
 
         if len(s)%2 == 1 : return False
-        if s[0] in ')}]': return False
+        elif s[0] in ')}]': return False
 
         for i in range(len(s)) :
             if s[i] in '({[':
