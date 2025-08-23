@@ -1,5 +1,6 @@
 class Solution:
     def twoSum(self, numbers: List[int], target: int) -> List[int]:
+        #algo used: two pointers
         x1, x2 = 0, len(numbers) -1
 
         while x1 < x2 :
