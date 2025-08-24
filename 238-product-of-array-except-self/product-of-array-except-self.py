@@ -9,7 +9,7 @@ class Solution:
 
         product = 1
         for i in range(len(nums)):
-            answer[i] *= product
+            answer[i] = product
             product *= nums[i]
         
         product = 1
