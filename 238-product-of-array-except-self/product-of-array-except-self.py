@@ -3,7 +3,7 @@ class Solution:
         #the idea is to iterate through the array twice
         #1st iteration from left of the array: product of all elements to the left
         #2nd iteration from right of the array: product of all elements to the right 
-        #if you multiply product of all nos. to the left and right, you have the req. product :p 
+        #if you multiply product of all nos. to the left and right, you have the req. product
 
         answer = [1] * len(nums)
 
