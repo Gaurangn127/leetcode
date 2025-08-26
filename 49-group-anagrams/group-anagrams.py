@@ -1,6 +1,6 @@
 class Solution:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
-        hashmap = {}
+        hashmap = defaultdict(list)
 
         for s in strs :
             count = [0] * 26
@@ -9,9 +9,6 @@ class Solution:
                 count[ord(char) -  ord("a")] += 1
 
             key = tuple(count)
-
-            if key not in hashmap :
-                hashmap[key] = []
             
             hashmap[key].append(s)
 
