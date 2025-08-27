@@ -3,7 +3,7 @@ class Solution:
         hashmap = {}
         freq = [[] for _ in range(len(nums) +1)]
 
-        # algorithm in use : bucket sort 
+        # algorithm in use: bucket sort 
 
         for n in nums :
             hashmap[n] = 1 + hashmap.get(n, 0)
