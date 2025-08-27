@@ -5,7 +5,7 @@ class Solution:
 
         # algorithm in use: bucket sort 
 
-        hashmap = Counter(nums)
+        hashmap = Counter(nums)      #using counter instead of manually counting for better time :p
         
         for n, count in hashmap.items() :
             freq[count].append(n)
