@@ -9,11 +9,10 @@ class Solution:
 
         count = 0
 
-        for i in range(2, n) :
+        for i in range(2, int(n ** 0.5) + 1) :
             if is_prime[i] :
-                count += 1
 
                 for j in range(i * i, n, i) :
                     is_prime[j] = False
                 
-        return count
+        return sum(is_prime)
