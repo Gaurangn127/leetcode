@@ -10,9 +10,9 @@ class Solution:
         
         for n, count in hashmap.items() :
             freq[count].append(n)
-
+  
         res = []
-
+  
         for i in range(len(freq)-1, 0, -1) :
             for n in freq[i] :
                 res.append(n)
