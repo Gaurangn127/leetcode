@@ -1,17 +1,19 @@
 class Solution:
     def isHappy(self, n: int) -> bool:
 
-        if n == 1 or n == 7 : 
-            return True
-        
-        elif n < 10 : 
-            return False
+        found = set()
 
-        else :
+        while n not in found :
+            found.add(n)
+
             S = 0
             while n > 0 :
                 S += (n % 10) ** 2
                 n = n // 10
+
+            if S == 1 :
+                return True
             
-            return self.isHappy(S)
-                
+            n = S
+        
+        return False
