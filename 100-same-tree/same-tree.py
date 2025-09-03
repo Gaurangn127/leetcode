@@ -17,7 +17,5 @@ class Solution:
             return False
         
         return self.isSameTree(p.left, q.left) and self.isSameTree(p.right, q.right)
-        
-        if p.left == q.left and p.right == q.right :
-            re
+
         
