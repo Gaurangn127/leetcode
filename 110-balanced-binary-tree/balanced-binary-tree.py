@@ -19,5 +19,3 @@ class Solution:
             return [balanced, 1 + max(left[1], right[1])]
         
         return height(root)[0]
-
-
