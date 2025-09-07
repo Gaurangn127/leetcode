@@ -23,5 +23,5 @@ class Solution:
             
             if s1_count == window_count :
                 return True
-            
+        
         return False
