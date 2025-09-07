@@ -1,9 +1,10 @@
 class Solution:
     def checkInclusion(self, s1: str, s2: str) -> bool:
-        if len(s1) > len(s2) :
-            return False
-        
         n, m = len(s1), len(s2)
+        
+        if n > m :
+            return False
+    
 
         #algo use- slinding window
         #ds using- hashmap : to store the count of each character in the s1 string, and the window
