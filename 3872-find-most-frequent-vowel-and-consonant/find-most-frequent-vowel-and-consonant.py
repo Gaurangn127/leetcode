@@ -3,7 +3,7 @@ class Solution:
         vowels = {'a', 'e', 'i', 'o', 'u'}
         v_hash, c_hash = {}, {}
         v_max, c_max = 0, 0
-
+ 
         for char in s :
             if char in vowels :
                 v_hash[char] = v_hash.get(char, 0) + 1
